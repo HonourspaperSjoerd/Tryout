@@ -1,0 +1,45 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Explaining the Classic Archival Institutions}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Classic Front-Office}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}A limited, well-known public}{3}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Classic Back-Office}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Checking up on friends}{3}{subsection.2.2.1}
+\contentsline {chapter}{\numberline {3}The current vision(s) of the future, and why they are lacking}{5}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.2}Werkgroep Voorbereiding Implementatie E-Depot}{6}{subsection.3.0.2}
+\contentsline {subsubsection}{\numberline {3.0.2.1}Handboek rollen - taken - verantwoordelijkheden en competenties}{6}{subsubsection.3.0.2.1}
+\contentsline {subsubsection}{\numberline {3.0.2.2}Opleidingsplan}{6}{subsubsection.3.0.2.2}
+\contentsline {subsubsection}{\numberline {3.0.2.3}Toepassingsprofiel Lokale Overheden}{6}{subsubsection.3.0.2.3}
+\contentsline {subsubsection}{\numberline {3.0.2.4}Handboek werkprocessen}{6}{subsubsection.3.0.2.4}
+\contentsline {subsubsection}{\numberline {3.0.2.5}Enterprisearchitectuur}{6}{subsubsection.3.0.2.5}
+\contentsline {subsection}{\numberline {3.0.3}Archiefcoalitie Digitale Duurzaamheid}{6}{subsection.3.0.3}
+\contentsline {subsubsection}{\numberline {3.0.3.1}Voorstel gemeenschappelijke E-depotvoorzieningen en services}{6}{subsubsection.3.0.3.1}
+\contentsline {subsubsection}{\numberline {3.0.3.2}Rapport E-depot}{6}{subsubsection.3.0.3.2}
+\contentsline {subsection}{\numberline {3.0.4}Consortium Regionale Historische Centra}{6}{subsection.3.0.4}
+\contentsline {subsubsection}{\numberline {3.0.4.1}Visiedocument 2009-2014}{6}{subsubsection.3.0.4.1}
+\contentsline {subsection}{\numberline {3.0.5}Landelijk Overleg van Provinciale Archiefinspecteurs}{6}{subsection.3.0.5}
+\contentsline {subsubsection}{\numberline {3.0.5.1}ED3}{6}{subsubsection.3.0.5.1}
+\contentsline {subsection}{\numberline {3.0.6}Current Record Professionals}{6}{subsection.3.0.6}
+\contentsline {subsubsection}{\numberline {3.0.6.1}McLeod: "records professionals may be part of the problem"}{6}{subsubsection.3.0.6.1}
+\contentsline {chapter}{\numberline {4}Challenging the future: Reuniting the Front- \& Back Office and re-establishing contact with the general public via the E-Depot (evolution vs revolution)}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}E-Depot: requirements for digital Front-Office tasks}{8}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}A new focus on usability: building a digital community with the unknown public}{8}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}McLeod: It will be automatic, ubiquitous and intrinsic without being a burden}{8}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}McLeod: Embed information management in human behavior using easy solutions and simple processes}{8}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}A new task: becoming a data mediator}{8}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}E-Depot: requirements for digital Back-Office tasks}{8}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}E-Depot developmental phase}{8}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Multidisciplinarity}{8}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}McLeod: RM principles need to be used at the systems design / conception phase}{9}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}Towards a new level of cooperation: learning from and challenging friends}{9}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Samen werken of samenwerken? Jantine Ploeg}{9}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Introducing: fluent records}{9}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}McLeod: records management principles are fundamentally sound and appear to be applicable for ERM, although some may be questioned e.g. what is a record?}{9}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Introducing: fluent metadata}{9}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}Protecting authenticity of fluent records}{9}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}Self-archiving: the wiki-way}{9}{subsubsection.4.2.4.1}
+\contentsline {subsection}{\numberline {4.2.5}Protecting reliability of fluent records}{9}{subsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.5.1}Scrolling back through time: record time machines}{9}{subsubsection.4.2.5.1}
+\contentsline {chapter}{\numberline {5}Conclusions}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{13}{chapter.6}
+\contentsline {chapter}{References}{15}{chapter*.2}

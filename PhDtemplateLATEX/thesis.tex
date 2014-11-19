@@ -1,0 +1,325 @@
+
+% ----------------------------------------------------------------------
+%                   LATEX TEMPLATE FOR PhD THESIS
+% ----------------------------------------------------------------------
+
+% based on Harish Bhanderi's PhD/MPhil template, then Uni Cambridge
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/ThesisStyle/
+% corrected and extended in 2007 by Jakob Suckale, then MPI-CBG PhD programme
+% and made available through OpenWetWare.org - the free biology wiki
+
+
+%: Style file for Latex
+% Most style definitions are in the external file PhDthesisPSnPDF.
+% In this template package, it can be found in ./Latex/Classes/
+\documentclass[twoside,11pt]{Latex/Classes/PhDthesisPSnPDF}
+
+
+%: Macro file for Latex
+% Macros help you summarise frequently repeated Latex commands.
+% Here, they are placed in an external file /Latex/Macros/MacroFile1.tex
+% An macro that you may use frequently is the figuremacro (see introduction.tex)
+\include{Latex/Macros/MacroFile1}
+
+
+
+%: ----------------------------------------------------------------------
+%:                  TITLE PAGE: name, degree,..
+% ----------------------------------------------------------------------
+% below is to generate the title page with crest and author name
+
+%if output to PDF then put the following in PDF header
+\ifpdf  
+    \pdfinfo { /Title  (PhD and MPhil Thesis Classes)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (Sjoerd Bergmans sbergmans87@gmail.com)
+               /CreationDate (D:YYYYMMDDhhmmss)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:YYYYMMDDhhmm)
+               /Subject (xyz)
+               /Keywords (add, your, keywords, here) }
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+
+\title{E-Depot \& Usuability: Scrolling Back Through Time}
+
+
+
+% ----------------------------------------------------------------------
+% The section below defines www links/email for author and institutions
+% They will appear on the title page of the PDF and can be clicked
+\ifpdf
+  \author{\href{mailto:sbergmans@gmail.com}{Sjoerd Bergmans}}
+  \cityofbirth{Born in: 's-Hertogenbosch} % uncomment this if your university requires this
+%  % If city of birth is required, also uncomment 2 sections in PhDthesisPSnPDF
+%  % Just search for the "city" and you'll find them.
+  \collegeordept{\href{http://www.uva.nl/onderwijs/bachelor/bacheloropleidingen/content/culturele-informatiewetenschap/b-culturele-informatiewetenschap.html}{Media \& Information}}
+  \university{\href{http://www.uva.nl}{University of Amsterdam}}
+
+  % The crest is a graphics file of the logo of your research institution.
+  % Place it in ./0_frontmatter/figures and specify the width
+  \crest{\includegraphics[width=10cm]{logo}}
+  
+% If you are not creating a PDF then use the following. The default is PDF.
+\else
+  \author{YourName}
+%  \cityofbirth{born in XYZ}
+  \collegeordept{CollegeOrDept}
+  \university{University}
+  \crest{\includegraphics[width=4cm]{logo}}
+\fi
+
+\renewcommand{\submittedtext}{A research article submitted for the:}
+\degree{Humanities Honours Programme}
+\degreedate{\today}
+
+
+% ----------------------------------------------------------------------
+       
+% turn of those nasty overfull and wunderfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+
+%: --------------------------------------------------------------
+%:                  FRONT MATTER: dedications, abstract,..
+% --------------------------------------------------------------
+
+\begin{document}
+
+%\language{english}
+
+% sets line spacing
+\renewcommand\baselinestretch{1.2}
+\baselineskip=18pt plus1pt
+
+
+%: ----------------------- generate cover page ------------------------
+
+\maketitle  % command to print the title page with above variables
+
+
+%: ----------------------- cover page back side ------------------------
+% Your research institution may require reviewer names, etc.
+% This cover back side is required by Dresden Med Fac; uncomment if needed.
+
+\newpage
+\vspace{10mm}
+1. Reviewer: Marijn Koolen
+
+\vspace{10mm}
+2. Reviewer: 
+
+\vspace{20mm}
+Uiterste Inleverdatum:  19th of January 2015
+
+\vspace{20mm}
+\hspace{70mm}Signature of approval:
+
+
+
+%: ----------------------- abstract ------------------------
+
+% Your institution may have specific regulations if you need an abstract and where it is to be placed in the document. The default here is just after title.
+
+\include{0_frontmatter/abstract}
+
+% The original template provides and abstractseparate environment, if your institution requires them to be separate. I think it's easier to print the abstract from the complete thesis by restricting printing to the relevant page.
+% \begin{abstractseparate}
+%   \input{Abstract/abstract}
+% \end{abstractseparate}
+
+
+%: ----------------------- tie in front matter ------------------------
+
+\frontmatter
+\include{0_frontmatter/dedication}
+\include{0_frontmatter/acknowledgement}
+
+
+%: ----------------------- contents ------------------------
+
+\renewcommand{\contentsname}{Conceptual setup}
+\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+\setcounter{tocdepth}{3}    % print table of contents for level 3
+\tableofcontents            % print the table of contents
+% levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
+
+
+%: ----------------------- list of figures/tables ------------------------
+
+%\listoffigures	% print list of figures
+
+%\listoftables  % print list of tables
+
+
+%: ----------------------- glossary ------------------------
+
+% Tie in external source file for definitions: /0_frontmatter/glossary.tex
+% Glossary entries can also be defined in the main text. See glossary.tex
+%\include{0_frontmatter/glossary} 
+
+%\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
+%\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
+
+%\printnomenclature[1.5cm] % [] = distance between entry and description
+%\label{nom} % target name for links to glossary
+
+%\end{footnotesize}
+%\end{multicols}
+
+
+
+%: --------------------------------------------------------------
+%:                  MAIN DOCUMENT SECTION
+% --------------------------------------------------------------
+
+% the main text starts here with the introduction, 1st chapter,...
+\mainmatter
+
+\renewcommand{\chaptername}{} % uncomment to print only "1" not "Chapter 1"
+
+
+%: ----------------------- subdocuments ------------------------
+
+% Parts of the thesis are included below. Rename the files as required.
+% But take care that the paths match. You can also change the order of appearance by moving the include commands.
+
+%\include{1_introduction/introduction}	% background information
+
+\chapter{Introduction}
+
+\chapter{Explaining the Classic Archival Landscape and Institutions}
+
+\section{Classic landscape}
+\subsection{Life-cycle landscape}
+
+The current Dutch archival landscape is based upon the lifecycle model. 
+
+\section{Classic Front-Office} % section headings are printed smaller than chapter names
+% intro
+\subsection{A limited, well-known public}
+
+The main focus of the front office is on serving the main customer: the public. This public used to exist mainly out of two groups: historically oriented researchers and genealogists.
+
+\section{Classic Back-Office}
+\subsection{Checking up on friends}
+
+\chapter{The current vision(s) of the future, and why they are lacking}
+\subsection{Werkgroep Voorbereiding Implementatie E-Depot}
+\subsubsection{Handboek rollen - taken - verantwoordelijkheden en competenties}
+\subsubsection{Opleidingsplan}
+\subsubsection{Toepassingsprofiel Lokale Overheden}
+\subsubsection{Handboek werkprocessen}
+\subsubsection{Enterprisearchitectuur}
+\subsection{Archiefcoalitie Digitale Duurzaamheid}
+\subsubsection{Voorstel gemeenschappelijke E-depotvoorzieningen en services}
+\subsubsection{Rapport E-depot}
+\subsection{Consortium Regionale Historische Centra}
+\subsubsection{Visiedocument 2009-2014}
+\subsection{Landelijk Overleg van Provinciale Archiefinspecteurs}
+\subsubsection{ED3}
+\subsection{Current Record Professionals}
+\subsubsection{McLeod: "records professionals may be part of the problem"} 
+-McLeod: their demands may be unrealistic or too constraining
+
+\chapter{Challenging the future: Reuniting the Front- \& Back Office and re-establishing contact with the general public via the E-Depot (evolution vs revolution)}
+
+\section{E-Depot: requirements for digital Front-Office tasks}
+\subsection{A new focus on usability: building a digital community with the unknown public}
+\subsubsection{McLeod: It will be automatic, ubiquitous and intrinsic without being a burden}
+\subsubsection{McLeod: Embed information management in human behavior using easy solutions and
+simple processes}
+\subsection{A new task: becoming a data mediator}
+\section{E-Depot: requirements for digital Back-Office tasks}
+\subsection{E-Depot developmental phase}
+\subsubsection{Multidisciplinarity}
+-McLeod: problem with record managers:
+* isolation of records professionals ? going it alone and not involving others early enough in process
+* Assuming IT have same knowledge/understanding of what is meant by ERM as yourself
+* leave it solely to [records managers] as they will develop an idealised version for the idealised user.
+McLeod: there is no ?one-size-fits-all? approach to successful ERM
+\subsubsection{McLeod: RM principles need to be used at the systems design / conception phase}
+\subsection{Towards a new level of cooperation: learning from and challenging friends}
+\subsubsection{Samen werken of samenwerken? Jantine Ploeg}
+\subsection{Introducing: fluent records}
+\subsubsection{McLeod: records management principles are fundamentally sound and appear to be applicable for ERM, although some may be questioned e.g. what is a record?}
+-McLeod: As the nature of records changes in line with rapid changes in the nature of
+information and communication technologies used to create them, so must our strategies for
+managing them.
+\subsubsection{Introducing: fluent metadata}
+\subsection{Protecting authenticity of fluent records}
+\subsubsection{Self-archiving: the wiki-way}
+\subsection{Protecting reliability of fluent records} 
+\subsubsection{Scrolling back through time: record time machines}
+\chapter{Conclusions}
+
+%\include{2/aims}						% aims of the project
+\include{3/XYZ}			
+\include{4/XYZ}	
+\include{5/XYZ}
+\include{6/XYZ}
+
+\include{7/discussion}               % discussion of results
+
+%\include{8/materials_methods}        % description of lab methods
+
+
+
+
+% --------------------------------------------------------------
+%:                  BACK MATTER: appendices, refs,..
+% --------------------------------------------------------------
+
+% the back matter: appendix and references close the thesis
+
+
+%: ----------------------- bibliography ------------------------
+
+% The section below defines how references are listed and formatted
+% The default below is 2 columns, small font, complete author names.
+% Entries are also linked back to the page number in the text and to external URL if provided in the BibTex file.
+
+% PhDbiblio-url2 = names small caps, title bold & hyperlinked, link to page 
+\begin{multicols}{2} % \begin{multicols}{ # columns}[ header text][ space]
+\begin{tiny} % tiny(5) < scriptsize(7) < footnotesize(8) < small (9)
+
+\bibliographystyle{Latex/Classes/PhDbiblio-url2} % Title is link if provided
+\renewcommand{\bibname}{References} % changes the header; default: Bibliography
+
+\bibliography{9_backmatter/references} % adjust this to fit your BibTex file
+
+\end{tiny}
+\end{multicols}
+
+% --------------------------------------------------------------
+% Various bibliography styles exit. Replace above style as desired.
+
+% in-text refs: (1) (1; 2)
+% ref list: alphabetical; author(s) in small caps; initials last name; page(s)
+%\bibliographystyle{Latex/Classes/PhDbiblio-case} % title forced lower case
+%\bibliographystyle{Latex/Classes/PhDbiblio-bold} % title as in bibtex but bold
+%\bibliographystyle{Latex/Classes/PhDbiblio-url} % bold + www link if provided
+
+%\bibliographystyle{Latex/Classes/jmb} % calls style file jmb.bst
+% in-text refs: author (year) without brackets
+% ref list: alphabetical; author(s) in normal font; last name, initials; page(s)
+
+%\bibliographystyle{plainnat} % calls style file plainnat.bst
+% in-text refs: author (year) without brackets
+% (this works with package natbib)
+
+
+% --------------------------------------------------------------
+
+% according to Dresden med fac summary has to be at the end
+%\include{0_frontmatter/abstract}
+
+%: Declaration of originality
+%\include{9_backmatter/declaration}
+
+
+
+\end{document}
