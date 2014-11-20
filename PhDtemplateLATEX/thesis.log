@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  6 NOV 2014 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  20 NOV 2014 00:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -437,7 +437,7 @@ LaTeX Info: Redefining \nameref on input line 90.
 \openout4 = `thesis.out'.
 
 
-<0_frontmatter/figures/logo.png, id=168, 302.12875pt x 30.1125pt>
+<0_frontmatter/figures/logo.png, id=180, 302.12875pt x 30.1125pt>
 File: 0_frontmatter/figures/logo.png Graphic file (type png)
 
 <use 0_frontmatter/figures/logo.png>
@@ -500,19 +500,20 @@ l.24 ...t (evolution vs revolution)}{7}{chapter.4}
 \FN@pp@footnotehinttrue 
 
 
-])
+]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 ...{\numberline {6}Discussion}{13}{chapter.6}
+                                                   [4])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.180 \mainmatter
-                  [4]
+ [5] [6
+
+]
  1.
 [1
-
 
 ] [2
 
@@ -524,11 +525,11 @@ l.180 \mainmatter
  3.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 204.
+(hyperref)                than one, level fixed on input line 211.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 205.
+(hyperref)                than one, level fixed on input line 212.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -595,15 +596,15 @@ No file 6/XYZ.tex.
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./thesis.aux
 (./0_frontmatter/abstract.aux) (./0_frontmatter/dedication.aux)
 (./0_frontmatter/acknowledgement.aux) (./3/XYZ.aux) (./4/XYZ.aux) (./5/XYZ.aux)
 (./6/XYZ.aux) (./7/discussion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 
 
 Package rerunfilecheck Warning: File `thesis.out' has changed.
@@ -611,36 +612,33 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: F7A4FB4A86C16363256648C799B1226B;4244
-(rerunfilecheck)             After:  65148D71997A42963B9C9A74AC6E3964;4569.
+(rerunfilecheck)             Before: 65148D71997A42963B9C9A74AC6E3964;4569
+(rerunfilecheck)             After:  3BB6AC37A802990534E48CBB44A8C6CD;4729.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 8300 strings out of 493117
- 124902 string characters out of 6135433
+ 8306 strings out of 493117
+ 124985 string characters out of 6135433
  223667 words of memory out of 5000000
- 11525 multiletter control sequences out of 15000+600000
+ 11528 multiletter control sequences out of 15000+600000
  12626 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,46p,1271b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.2.2.2} has been referenced but do
-es not exist, replaced by a fixed one
-
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on thesis.pdf (23 pages, 147785 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
+Output written on thesis.pdf (25 pages, 148950 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
 
