@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>AMSTERDAM CITYTOUR</title>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    	<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Period (Year)',  'Institutionele Groep', 'Juridische Groep 1', 'Politieke Groep', 'Geografische Groep', 'Burgelijke Stand Groep', 'Juridische Groep 2', 'Mannelijke Groep', 'Criminaliteitsgroep', 'Economische Groep', 'Discriminatie Groep', 'Vrouwelijke Groep', 'Juridische Combi'],
+          ['1970-1979 (861 - 21.37)', 5.92, 3.02, 1.39, 1.74, 3.60, 1.16, 2.21, 0.58, 1.51, 0.35, 0.35, 4.18],
+          ['1980-1989 (10269 - 25.39)', 6.34, 4.41, 2.98, 3.16, 2.66, 1.82, 1.42, 1.17, 1.34, 0.65, 0.17, 6.23],
+          ['1990-1995 (15732 - 24.05)', 5.97, 3.97, 3.06, 3.01, 2.29, 1.89, 1.53, 1.39, 0.95, 0.48, 0.17, 5.85]
+        ]);
+
+        var options = {
+        title: 'Woordfrequenties van randwoorden rondom -asielzoeker- in Staten Generaal Digitaal (op categorie)',
+        legend: { position: 'top', maxLines: '2' },
+        height: 600,
+        width: 1400,
+        chartArea: { backgroundColor: "#f4f4f4" },
+        vAxis: { format: "0'%'" }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+		<style TYPE="text/css">
+		<!--  
+  		body {
+			margin: 5%;
+			background-image: url(nat.jpg);
+			background-attachment: fixed;
+			color: white;
+			text-align: center;
+			font: 1em Arial, sans-serif;
+			border: 3em white
+		}
+
+		h1 {
+			border: 0.1em;
+			vertical-align: center;
+			margin-top: 3%;
+			background: url(http://www.ryanmulready.com/images/background.png);
+			background:rgba(255,255,255,0.5);
+			overflow: auto;
+			font: 200% Arial, sans-serif;
+			letter-spacing: 1em;
+			color: black;
+			height: 5em;
+			line-height: 5em;
+			word-wrap: break-word;
+			white-space: pre;
+			}
+
+		h2 {
+			border: 0.1em;
+			vertical-align: center;
+			margin-top: 3%;
+			background: url(http://www.ryanmulready.com/images/background.png);
+			background:rgba(255,255,255,0.5);
+			overflow: auto;
+			font: 200% Arial, sans-serif;
+			letter-spacing: 0.1em;
+			color: black;
+			height: 5em;
+			line-height: 5em;
+			word-wrap: break-word;
+			white-space: pre;
+		}
+
+		div.left {
+			text-align: left;
+
+		}
+
+		div.stripe{
+			color: red;
+		}
+
+		div.pic1{
+			border: 3px solid #021a40;
+			background-image: url(http://i61.tinypic.com/egcpj7.jpg);
+			opacity: 0.5;
+			background-attachment: scroll;
+			background-size: 100% 100%;
+			overflow: auto;
+		}
+
+		div.pic2{
+			border: 3px solid #021a40;
+			background-image: url(http://i59.tinypic.com/33m7u5z.jpg);
+			background-attachment: scroll;
+			background-size: 100% 100%;
+			overflow: auto;
+		}
+
+		div.pic3{
+			border: 3px solid #021a40;
+			background-image: url(http://i61.tinypic.com/2zs2z28.jpg);
+			background-attachment: scroll;
+			background-size: 100% 100%;
+			overflow: auto;
+		}
+
+		div#chart_div{
+			opacity: 1;
+		}
+
+		img {
+   
+   			margin-top: 3%;
+   			margin-bottom: 3%;
+   			padding:5px;
+   			border:1px solid #021a40;
+   			background-color:white;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="pic1">
+			<p class="Titel" ><h1><b>--- AMSTERDAM CITYTOUR ---</b></h1></p>
+			<div id="chart_div" style="height:410px; width:410px; max-width:610px; max-height:610px;"></div>
+		</div>
+	</body>
+</html>
+	
